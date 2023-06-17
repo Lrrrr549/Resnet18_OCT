@@ -4,7 +4,11 @@
 
 ![OCT](./img/fSTeZMd.png "OCT")
 
-已实现flask框架搭建，详见[app.py](./app.py)，一个简单的网页
+已实现flask框架搭建，详见[app.py](./app.py)，记得修改model_path
+
+```python
+model_path = '/home/lighthouse/resnet-OCT/OCT-Resnet_model.pth'
+```
 
 测试集准确率99.7%模型附在[此处](https://pan.baidu.com/s/1jZwjOzJloDACgnLMq9m_aQ)，提取码：n2dr，修改路径即可一键调用:smirk:
 

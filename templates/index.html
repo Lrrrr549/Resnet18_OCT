@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN\">
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <title>疫码通</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <!-- Brand -->
+    <div class="container">
+        <a class="navbar-brand" href="/index"><strong>疫码通</strong></a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navmenu"> 
+            <ul class="navbar-nav me-auto mx-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="/OCT">OCT眼疾识别</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Chest">胸部X光识别</a>
+                </li>
+                
+                <li class="navitem dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">关于我们</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">我们的介绍</a></li>
+                        <li><a class="dropdown-item" href="#">联系我们</a></li>
+                      </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="p-5">
+    <div class="container">
+        <h2>疫码通</h2>
+    </div>
+</section>
+
+</body>
+</html>

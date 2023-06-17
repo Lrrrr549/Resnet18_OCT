@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <title>OCT眼疾识别</title>
+</head>
+<body text-center>
+
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <!-- Brand -->
+    <div class="container">
+        <a class="navbar-brand" href="/index"><strong>OCTogether</strong></a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navmenu"> 
+            <ul class="navbar-nav me-auto mx-4">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/OCT">OCT眼疾识别</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/Chest">胸部X光识别</a>
+                </li>
+                
+                <li class="navitem dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">关于我们</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">我们的介绍</a></li>
+                        <li><a class="dropdown-item" href="#">联系我们</a></li>
+                      </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="p-5 text-center text-sm-start">     <!-- padding-5 -->
+    <div class="container" >
+        <div class="d-flex ">                       <!-- display:flex -->
+            <div class="my-4">                      <!-- margin top bottom -->
+                <h1>OCT眼疾识别</h1>
+                <p>OCT 是一种成像技术，用于捕捉活体患者视网膜的高分辨率横截面。每年大约要进行3000万次 OCT 扫描，这些图像的分析和解释需要大量的时间；我们将会为眼角膜OCT图像的辨别提供一定的帮助。异常图像将会被识别为为CNV，DME，DRUSEN三类。</p>
+                
+                <button class="btn btn-lg btn-primary" id="scrollButton">开始使用</button>
+
+            </div>
+            <img decoding="async" src="https://img1.baidu.com/it/u=2016275207,3213873530&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=343" alt="oct" class="w-50 d-none d-md-block" >
+        </div>
+    </div>
+</section>
+
+<section class="p-5">
+    <div class="container">
+        <h1>症状介绍</h1>
+        <div class="row g-4 mt-2">
+            <div class="col-md" >
+                <div class="card" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img decoding="async" class="card-img-top" style="height: 200px;" src="https://s3.bmp.ovh/imgs/2023/02/08/628246096d58c34c.jpeg">
+                <div class="card-body text-center" >
+                    <h4 class="card-title">脉络膜新生血管</h4>
+                    <div class="card-text">
+                        <strong>脉络膜新生血管(CNV)</strong>是常见的累及各年龄段的眼底疾病，是危害视力、导致失明的主要原因之一。CNV继发于很多眼底疾病，最常见于湿性年龄相关性黄斑变性和病理性近视。此外，还包括眼底血管样条纹、遗传性的黄斑变性、炎症、创伤、肿瘤或者无明显病因(特发性脉络膜新生血管)等，均可能并发CNV。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E8%84%89%E7%BB%9C%E8%86%9C%E6%96%B0%E7%94%9F%E8%A1%80%E7%AE%A1/2644200?fr=aladdin" target="_blank" class="btn btn-primary mt-2">进一步了解</a>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="col-md" >
+                <div class="card" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img decoding="async" style="height: 200px;" class="card-img-top" src="https://s3.bmp.ovh/imgs/2023/02/08/affff635b92961aa.jpeg">
+                <div class="card-body text-center" >
+                    <h4 class="card-title">糖尿病性黄斑水肿</h4>
+                    <div class="card-text">
+                        <strong>糖尿病性黄斑水肿(DME)</strong>是糖尿病的一种眼部并发症，会在糖尿病患者中发展。黄斑是位于视网膜中央的区域，负责视觉清晰度。视网膜是位于眼睛后部内壁的感光组织。当眼睛黄斑中积聚过多液体时，就会发生糖尿病性黄斑水肿。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E7%B3%96%E5%B0%BF%E7%97%85%E6%80%A7%E9%BB%84%E6%96%91%E6%B0%B4%E8%82%BF?fromModule=lemma_search-box" class="btn btn-primary mt-2" target="_blank">进一步了解</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md" >
+                <div class="card" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img decoding="async" class="card-img-top" style="height: 200px;" src="https://s3.bmp.ovh/imgs/2023/02/08/de9df13969554278.jpeg">
+                <div class="card-body text-center" >
+                    <h4 class="card-title">玻璃膜疣</h4>
+                    <div class="card-text">
+                        <strong>玻璃膜疣(DRUSEN)</strong>是胶样或透明的小体，是一种发生在脉络膜视网膜的一种变性疾病，是色素上皮细胞异常代谢产物在视网膜上的异常沉积所致。玻璃膜疣多见于老年人，一般双眼对称，是由于色素上皮代谢障碍引起的。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E7%8E%BB%E7%92%83%E8%86%9C%E7%96%A3?fromModule=lemma_search-box" target="_blank" class="btn btn-primary mt-2">进一步了解</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="p-5">
+    <div class="container">
+        <div>
+            <h1 class="my-4">预测</h1>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <form id="upload-file" method="post" enctype="multipart/form-data" >
+            <label class="btn btn-primary" for="imageUpload">上传图片</label>
+        <input class="d-none" type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" >
+            <button type="button" class="btn btn-primary" id="oct-pred">预测</button>
+        </form>
+        <div class="d-flex">
+            <div id="img-preview"></div>
+            <div id="pre"></div>
+        </div>  
+         
+    </div>
+    
+</section>
+
+
+<section class="p-5 bg-primary text-light text-center" >
+    <h2>OCTogether</h2>
+
+</section>
+
+
+    
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+</body text-center>
+
+
+</html>

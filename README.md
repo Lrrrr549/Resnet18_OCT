@@ -4,6 +4,7 @@
 
 ![OCT](./img/fSTeZMd.png "OCT")
 
-已实现flask框架搭建，详见[app.py](./app.py)
+已实现flask框架搭建，详见[app.py](./app.py)，一个简单的网页
 
-测试集准确率99.7%模型附在[此处](https://pan.baidu.com/s/1jZwjOzJloDACgnLMq9m_aQ)，提取码：n2dr，修改路径即可一键调用
+测试集准确率99.7%模型附在[此处](https://pan.baidu.com/s/1jZwjOzJloDACgnLMq9m_aQ)，提取码：n2dr，修改路径即可一键调用:smirk:
+
